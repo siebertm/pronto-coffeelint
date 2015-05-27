@@ -1,6 +1,6 @@
 # Pronto runner for Coffeelint
 
-Pronto runner for [Coffeelint](http://www.coffeelint.com/), Coffeescript code quality tool. [What is Pronto?](https://github.com/mmozuras/pronto)
+Pronto runner for [Coffeelint](http://www.coffeelint.org/), Coffeescript code quality tool. [What is Pronto?](https://github.com/mmozuras/pronto)
 
 Shamelessly copied and adapted from [pronto-jshint](https://github.com/mmozuras/pronto-jshint)
 
