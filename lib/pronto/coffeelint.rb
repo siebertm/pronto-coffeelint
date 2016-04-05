@@ -3,10 +3,10 @@ require 'coffeelint'
 
 module Pronto
   class Coffeelint < Runner
-    def run(patches, _)
-      return [] unless patches
+    def run
+      return [] unless @patches
 
-      patches.select { |patch| patch.additions > 0 }
+      @patches.select { |patch| patch.additions > 0 }
              .select { |patch| coffee_file?(patch.new_file_full_path) }
              .map { |patch| inspect(patch) }
              .flatten.compact
@@ -31,7 +31,7 @@ module Pronto
         'fatal' => :fatal
       }[offence['level']]
 
-      Message.new(path, line, level, offence['message'])
+      Message.new(path, line, level, offence['message'], nil, self.class)
     end
 
     def coffee_file?(path)
