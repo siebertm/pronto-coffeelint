@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.author = 'Michael Siebert'
   s.email = 'siebertm85@googlemail.com'
-  s.homepage = 'http://github.org/siebertm/pronto-coffeelint'
+  s.homepage = 'http://github.com/siebertm/pronto-coffeelint'
   s.summary = 'Pronto runner for Coffeelint, CoffeeScript code quality tool'
 
   s.required_rubygems_version = '>= 1.3.6'
